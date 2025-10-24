@@ -1,0 +1,78 @@
+*{
+    box-sizing : border-box;
+    padding : 0;
+    margin : 0;
+}
+
+body {
+    font-family : 'Design-Fonts', sans-serif;
+    font-size : 0.825rem; /* 14px */
+    font-weight: 400;
+}
+
+.no-bullets{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color : var(--white);
+}
+
+.body-container{
+    display : grid;
+    place-items : center;
+    height: 100vh;
+    background : var(--background-black);
+    color : var(--white);
+    
+    position : relative;
+}
+
+.card{
+    display : flex;
+    flex-direction : column;
+    justify-content : center;
+    align-items : center;
+    
+    background : var(--card-black);
+    border-radius : 0.625rem;
+    /*width :28%;*/
+}
+
+.card >  *{
+    margin : 0.5rem 1.5rem;
+}
+
+.card > img{
+    margin-top : 2rem;
+    width : 4rem;
+    border-radius: 50%;
+}
+
+
+.btn {
+    background-color : var(--button-black);
+    border-radius : 0.4rem;
+    padding : 0.5rem 1.5rem;
+    margin : 1rem;
+    font-weight : 600;
+    justify-content: center;
+    align-items : center;
+    text-align : center;
+}
+
+.btn-long{
+    padding : 0.8rem 5rem;
+}
+
+.location-tag{
+    color : var(--lime-green);
+    font-weight : 600;
+}
+
+
+.attribution {
+    position : absolute;
+    bottom : 0.9rem;
+}

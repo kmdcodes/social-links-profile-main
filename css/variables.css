@@ -1,0 +1,16 @@
+:root{
+    --lime-green :  hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    
+    --background-black : hsl(0, 0%, 8%);
+    --card-black : hsl(0, 0%, 12%);
+    --button-black : hsl(0, 0%, 20%);   
+}
+
+@font-face{
+    font-family : 'Design-Fonts';
+    src: url('../assets/fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+    font-weight : 100 900;
+    font-style : normal;
+    
+}
