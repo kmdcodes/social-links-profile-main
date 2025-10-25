@@ -19,6 +19,11 @@ a{
     color : var(--white);
 }
 
+p{
+    font-size: 1em;
+}
+
+/** Styles to center the card component on the screen  */
 .body-container{
     display : grid;
     place-items : center;
@@ -29,6 +34,8 @@ a{
     position : relative;
 }
 
+
+/** Styles for the card begins  */
 .card{
     display : flex;
     flex-direction : column;
@@ -41,15 +48,26 @@ a{
 }
 
 .card >  *{
-    margin : 0.5rem 1.5rem;
+    margin : 0.4rem 1.5rem;
 }
 
 .card > img{
     margin-top : 2rem;
-    width : 4rem;
+    width : 5rem;
     border-radius: 50%;
 }
 
+.card>:nth-child(4){
+    margin-top :1.5rem;
+    
+}
+
+.name-tag{
+    font-size: 1.7em;
+    font-weight: 600;
+    margin-top: 1em;
+    
+}
 
 .btn {
     background-color : var(--button-black);
@@ -60,6 +78,22 @@ a{
     justify-content: center;
     align-items : center;
     text-align : center;
+}
+
+
+.btn:hover{
+    background-color: var(--lime-green);
+    color: var(--button-black);
+    cursor: pointer;
+}
+.btn:hover a{
+    color: var(--button-black);
+}
+
+.btn:focus{
+  outline : 0.2em solid red;
+    color: var(--button-black);
+    cursor: pointer;
 }
 
 .btn-long{
