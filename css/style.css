@@ -78,6 +78,7 @@ p{
     justify-content: center;
     align-items : center;
     text-align : center;
+    transition: all 0.3s ease-in;
 }
 
 
@@ -91,9 +92,9 @@ p{
 }
 
 .btn:focus{
-  outline : 0.2em solid red;
-    color: var(--button-black);
-    cursor: pointer;
+    outline : 0.125rem solid var(--lime-green);
+    box-shadow: 3px 0.25rem 3px rgba(255,255,255, 0.8),
+        3px 0.2rem 2px rgba(255,255,255, 0.9);
 }
 
 .btn-long{
@@ -109,4 +110,36 @@ p{
 .attribution {
     position : absolute;
     bottom : 0.9rem;
+}
+
+
+@media(max-width : 375px){
+    .card{
+        width: 90%;
+        min-width: 300 px;
+    }
+
+    ul{
+        width:95%;
+    }
+    .card > img{
+        width : 3.5rem;
+        margin-top: 1rem;
+    }
+
+    .btn-long{
+        padding : 0.5rem 3.75rem;
+        font-size: 0.8em;
+    }
+
+    p{
+        font-size: 0.8em;
+    }
+
+    .name-tag{
+        font-size : 1.4em;
+    }
+
+
+
 }
